@@ -67,26 +67,22 @@
     \end{titlepage}
 
 
-    \renewcommand*\contentsname{Summary}
+    \renewcommand*\contentsname{\huge Summary}
+    \large
     \tableofcontents
+    \normalsize
 
     \pagebreak
-    \section{Why use Python or Octave?}
-    Helllo My name is Atharva\footnote[2]{the guy who created this} \\
-    \lipsum[1-2]
-
-    \pagebreak
-
-
-
+    \huge
     \section{The Mandelbrot Set}
+    \normalsize
     The Mandelbrot set is the set of all complex numbers $ c $ for which $z_{n}$ defined by the iteration $ z_{n+1} = z_{n}^2 + c $ with $ z_{0} = 0 $ remains bounded in absolute value.
     It can be shown that for $ c $ to lie in the Mandelbrot set the magnitude of $ z_{n} $ should never exceed $ 2 $.
 
     i.e. if M denotes the Mandelbrot set then
     \[ M = \{c : c \in \mathbb{C} \ \land \ z_{n+1}:=z_{n}^2 + c \ \land \ \exists \ m \in \mathbb{N} \ \text{such that} \lim_{n \to \infty} z_{n} \leq m \} \]
 
-    To get an idea of how the set looks like we wrote a Python program that plots points on the complex plane whose magnitude remains less than equal to 2 after a certain threshold value of iterations under the above defined rule.\footnote[2]{For the Python codes used to generate the plot refer \url{mygithubpage}}
+    To get an idea of how the set looks like we wrote a Python program that plots points on the complex plane whose magnitude remains less than equal to 2 after a certain threshold value of iterations under the above defined rule.\footnote[2]{For the Python codes used to generate the plot refer - \href{https://github.com/atharvaaalok/AS2101_Mandelbrot_Lorenz/tree/main/Python}{Python Codes}}
     \bigskip
 
     
@@ -122,9 +118,9 @@
     \end{figure}
 
     \pagebreak
-
-
+    \huge
     \section{The Lorenz Attractor}
+    \normalsize
     Consider the following System of First Order Differential equations.
 
     \begin{align}
@@ -154,7 +150,7 @@
     This system also displays another interesting behavior. For a wide variety of initial conditions the system tends to evolve towards a set of states. This set is called an \textbf{``Attractor"}.
     Specifically it settles towards a type of attractor called the \textbf{``Strange Attractor"}.
 
-    Fig.\ref{fig:LorenzAttractor} shows how 2 very close initial states(marked in white) finally settle onto a set, the Strange Attractor(the curve in red and blue).\footnote[2]{For the codes used to generate the plot visit - \url{MYGITHUBPAGE}}
+    Fig.\ref{fig:LorenzAttractor} shows how 2 very close initial states(marked in white) finally settle onto a set, the Strange Attractor(the curve in red and blue).\footnote[2]{For the codes used to generate the plot visit - \href{https://github.com/atharvaaalok/AS2101_Mandelbrot_Lorenz/tree/main/MATLAB}{MATLAB Codes}}
 
     \begin{figure}[h]
         \centering
